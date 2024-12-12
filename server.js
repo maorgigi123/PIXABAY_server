@@ -29,7 +29,7 @@ app.get('/images', async (req, res) => {
     const response = await axios.get(PIXABAY_API_URL, {
       params: {
         key: PIXABAY_API_KEY,
-        q: category,
+        category: category,
         page,
         per_page: 9,
         image_type: 'photo',
